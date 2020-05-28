@@ -1,0 +1,63 @@
+HTML_Day4
+
+- Float:
+ +Một phần tử float sẽ làm cho phần tử không float đằng sau nó chồng lên, có thể gây ra hiệu quả không mong muốn.
+ +Để tránh hiện tượng trên, ta có thể áp dụng thuộc tính clear cho phần tử không float như sau:
+	.no-float {
+    clear: both;
+	}
+ +Thuộc tính này được dùng khá nhiều trong các trang web và thường được đặt trong 1 class chung (ví dụ như .clear, .clearfix,... ) để tiện sử dụng tại nhiều trang khác nhau.
+ Ngoài ra nếu 1 phần tử không float, nhưng toàn bộ phần tử con lại dùng float thì chiều cao của phần tử cha sẽ bằng 0, và các phần tử bên dưới sẽ chồng lên nó. Để khắc phục ta có thể dùng một trong các cách sau:
+ +Chèn thêm 1 thẻ div rỗng vào cuối nội dung phần tử cha (hoặc sử dụng pseudo class ::after) và đặt thuộc tính clear.
+ +Sử dụng thuộc tính display: table cho phần tử cha (cần đặt chiều rộng phù hợp).
+ +Sử dụng thuộc tính overflow: auto cho phần tử cha.
+
+-Display:
+ +block: chiều rộng trải hết màn hình (div)
+ +inline: chỉ bao quanh text đó (span)
+ +inline-block: 
+ +none: ẩn nội dung đi và thẻ dưới đè lên(nhảy lên) -> visibility: ẩn nội dung đi và thành khoảng trắng, ko bị ngảy nội dung bên dưới lên
+ +flex:
+ +table:
+ 
+-Span: là thẻ dùng để style cho text, đoạn văn nên ko thể set hight width cho nó
+ Text: thường dùng với span, label
+ Link dùng a)
+ 
+-Div: thường dùng để style cho khối
+ 
+-Position: (thường set top/left=0 để cho nó chạy lên cùng)
+ +fixed: cố định 1 phần nội dung lại (vd: menu)
+ +relative: áp dụng lên thằng cha, tạo ra giới hạn di chuyển trong phạm vi đặt ra 
+ +absolute: With absolute positioning, an element can be placed anywhere on a page. 
+- z-index: set cho 1 nội dung đè lên trên nội dung khác bằng cách set giá trị cho nó lớn hơn thằng kia.
+-Box-sizing: style trong khoảng phạm vi bên trong nó, ko lấn sang bên ngoài.
+-Thẻ <input value="" ; placehobler="">: phần tìm kiếm trên trang web
+ style="left: calc(50% - 50px);"
+
+-Pseudo class (một vài class hay dùng):
+ +link: Selects all unvisited links
+ +visited: 	Selects all visited links
+ +hover : 	Selects links on mouse over (Hover on <div> )
+ +active : Selects the active link
+ + ::after	p::after	Insert content after every <p> element
+ + ::before	p::before	Insert content before every <p> element
+ 
+-Div & span : thẻ chủ yếu dùng trong css
+
+-Padding: dùng để dãn cách nội dung và viền của 1 element
+-Margin: dùng để dãn cách giữa các element với nhau.
+
+-Căn giữa cho banner: 
+ +Chia riêng file style cho banner và style cho content
+ +Bao bọc mỗi phần bằng 1 thẻ div riêng
+ +Bao bọc tất cả bằng thẻ div có class="wrap" và style cho thẻ wrap với max-width="1000px"(banner tối đa chỉ hiển thị 1280px)  margin="auto"
+ + img { mad-width="100%"}
+ +Chú ý xem trên dev tool để chỉnh kích thước thật cho content =< banner
+
+-Nên sử dụng box-sizing: border-box cho toàn bộ element trong trang để style cho dễ (padding và border sẽ không làm tăng kích thước phần tử)
+ * {
+    box-sizing: border-box;
+	}
+ 
+ 

@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+	}
+
+.header{
+    background: red;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    margin: auto;
+
+}
+
+.wrap{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-bar{
+    height: 150px;
+    width: 100%;
+
+
+}
+
+.header-logo{
+    position: relative;
+    height: 102px;
+    width: 212px;
+    align-items: center;
+    padding: 0;
+    top: 60px;
+
+}
+
+.search-block{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    margin-left: 220px;
+    padding-left: 7px;
+}
+
+.search-textbox{
+    width: 450px;
+    height: 40px;
+    position: relative !important;
+    
+}
+
+#search_vinmart{
+    border: 1px solid #fe3232;
+    background: #fff;
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+    padding: 5px 40px 5px 15px;
+    border-radius: 2px;
+
+}
+
+.header-right-block{
+    float: left;
+    width: 472px;
+    height: 80px;
+    margin-left: 20px;
+    line-height: 1.25;
+    margin: auto 0 auto 0;
+    font-size: 13px;
+    display: none;
+}
+
+.header-right-block1{
+    float: left;
+    width: 140px;
+    height: 52px;
+    margin: auto;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.header-right-block2{
+    float: left;
+    width: 146px;
+    height: 37px;
+    margin: auto;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.header-right-block3{
+    float: left;
+    width: 146px;
+    height: 31px;
+    margin: auto;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login-register{
+    margin-left: 10px;
+}
+
+.navigation-bar{
+    background: #f1f0f1;
+    position: relative;
+    height: 40px;
+}
+
+.container{
+    float: left;
+    width: 1180px;
+    height: 40px;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+}
+
+
+.danhmucsp-content{
+    float: left;
+    width: 24%;
+}
+
+.list-product{
+    position: relative;
+    max-width: 178px;
+    text-align: left;
+    background: #fff;
+    padding: 10px;
+    left: 0px;
+    display: none;
+    position: absolute;
+    z-index: 190;
+}
+
+.dmsp-list:hover .list-product{
+    display: block;
+}
+
+
+.spvuaxem{
+    float: left;
+    width: 76%;
+    height: 36px;
+}
+
+.spvuaxem1{
+    float: left;
+    text-transform: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+}
+
+.tintuc{
+    float: left;
+    text-transform: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+}
+
+.tuvan{
+    float: left;
+    text-transform: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 10px;
+}
+
+.block-top{
+    display: grid;
+    grid-gap: 7px;
+    position: relative;
+    width: 1180px;
+    height: 400px;
+}
+
+.header-image{
+    padding-bottom: 33.3475%;
+    background-position: center;
+}
+
+.img-style{
+    width: 1180px;
+    height: 400px;
+}
+
+.groups-buttons{
+    width: 1180px;
+    margin-top: 1px;
+}
+
+.bancungoiyen-button{
+    border-top: 2px solid #d42333;
+    background: #eaeaea;
+    font-size: 16px;
+    text-transform: none;
+    height: 55.11px;
+}
+
+.bancungoiyen-button-content{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 17px;
+}
+
+.mt{
+    margin-top: 20px;
+}
+
+.thicatrung-header{
+    width: 1180px;
+    height: 43px;
+    color: #f44336;
+    caret-color: #f44336;
+    font-size: 29px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.thitcatrung-content{
+    width: 1180px;
+    height: 468px;
+    padding-bottom: 20px;
+    background: #fff;
+}
+
+.thitcatrung-layout{
+    width: 1150px;
+    height: 390px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.thitcatrung-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-sizing: content-box;
+}
+
+.meatdeli-1{
+    width: 222px;
+    height: 100%;
+    position: relative;
+    margin-right: 10px;
+}

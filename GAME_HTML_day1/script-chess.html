@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas</title>
+</head>
+
+<body>
+  <canvas id="canvas" width="440" height="440" style="background-color: cadetblue; border: 1px solid black"></canvas>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d")
+
+    //khai báo biến, array gồm các đoạn string để in ra cho dễ dùng trong vòng lặp
+    var numb = ["8", "7", "6", "5", "4", "3", "2", "1"];
+    var chars = ["A", "B", "C", "D", "E", "F", "G", "H"];
+    var i, j;
+
+    ctx.beginPath();
+    // in nền
+    ctx.fillStyle = "yellow"
+    ctx.fillRect(0, 0, 440, 440)
+    // đăng ký style cho in chữ
+    ctx.fillStyle = 'black'
+    ctx.font = "20px Serif";
+    ctx.textAlign = "center";
+    //in phần chữ ra
+    for (i = 0; i < 8; i++) {
+      ctx.fillText(numb[i], 10, 50 + 50 * i);
+      ctx.fillText(numb[i], 430, 50 + 50 * i);
+      ctx.fillText(chars[i], 45 + 50 * i, 15);
+      ctx.fillText(chars[i], 45 + 50 * i, 435);
+    }
+    //in bàn cờ ra
+    for (i = 0; i < 8; i++) {
+      for (j = 0; j < 8; j++) {
+        if ((i + j) % 2 == 0) {
+          ctx.fillStyle = "#ffeecc"
+        } else {
+          ctx.fillStyle = "#d2a679"
+        }
+        ctx.fillRect(20 + i * 50, 20 + j * 50, 50, 50)
+      }
+    }
+    ctx.closePath();
+  </script>
+</body>
+
+</html>

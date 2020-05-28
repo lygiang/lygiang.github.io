@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="400" height="400" style="background-color: cadetblue; border: 1px solid black"></canvas>
+
+    <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d")
+        //line 8
+        ctx.beginPath();
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(0, 0, 50, 50)
+            //add number
+        ctx.fillStyle = 'gray'
+        ctx.font = "15px Georgia";
+        ctx.textAlign = "center";
+        ctx.fillText("8", 5, 50);
+            //add text
+        ctx.fillStyle = 'gray'
+        ctx.font = "16px Georgia";
+        ctx.textAlign = "right";
+        ctx.fillText("a", 48, 15);
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(50, 0, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "16px Georgia";
+        ctx.textAlign = "right";
+        ctx.fillText("b", 98, 15);
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(100, 0, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "16px Georgia";
+        ctx.textAlign = "right";
+        ctx.fillText("c", 148, 15);
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(150, 0, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "16px Georgia";
+        ctx.textAlign = "right";
+        ctx.fillText("d", 198, 15);
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(200, 0, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "16px Georgia";
+        ctx.textAlign = "right";
+        ctx.fillText("e", 248, 15);
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(250, 0, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "16px Georgia";
+        ctx.textAlign = "right";
+        ctx.fillText("f", 298, 15);
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(300, 0, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "16px Georgia";
+        ctx.textAlign = "right";
+        ctx.fillText("g", 348, 15);
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(350, 0, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "16px Georgia";
+        ctx.textAlign = "right";
+        ctx.fillText("h", 398, 15);
+        ctx.closePath();
+        //line 7
+        ctx.beginPath();
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(0, 50, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "15px Georgia";
+        ctx.textAlign = "center";
+        ctx.fillText("7", 5, 95);
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(50, 50, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(100, 50, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(150, 50, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(200, 50, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(250, 50, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(300, 50, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(350, 50, 50, 50);
+        ctx.closePath();
+        //line 6
+        ctx.beginPath();
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(0, 100, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "15px Georgia";
+        ctx.textAlign = "center";
+        ctx.fillText("6", 5, 150);
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(50, 100, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(100, 100, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(150, 100, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(200, 100, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(250, 100, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(300, 100, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(350, 100, 50, 50);
+        ctx.closePath();
+        //line 5
+        ctx.beginPath();
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(0, 150, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "15px Georgia";
+        ctx.textAlign = "center";
+        ctx.fillText("5", 5, 195);
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(50, 150, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(100, 150, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(150, 150, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(200, 150, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(250, 150, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(300, 150, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(350, 150, 50, 50);
+        ctx.closePath();
+        //line 4
+        ctx.beginPath();
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(0, 200, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "15px Georgia";
+        ctx.textAlign = "center";
+        ctx.fillText("4", 5, 245);
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(50, 200, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(100, 200, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(150, 200, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(200, 200, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(250, 200, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(300, 200, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(350, 200, 50, 50);
+        ctx.closePath();
+        //line 3
+        ctx.beginPath();
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(0, 250, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "15px Georgia";
+        ctx.textAlign = "center";
+        ctx.fillText("3", 5, 295);
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(50, 250, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(100, 250, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(150, 250, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(200, 250, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(250, 250, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(300, 250, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(350, 250, 50, 50);
+        ctx.closePath();
+        //line 2
+        ctx.beginPath();
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(0, 300, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "15px Georgia";
+        ctx.textAlign = "center";
+        ctx.fillText("2", 5, 348);
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(50, 300, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(100, 300, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(150, 300, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(200, 300, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(250, 300, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(300, 300, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(350, 300, 50, 50);
+        ctx.closePath();
+        //line 1
+        ctx.beginPath();
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(0, 350, 50, 50)
+        ctx.fillStyle = 'gray'
+        ctx.font = "15px Georgia";
+        ctx.textAlign = "center";
+        ctx.fillText("1", 5, 398);
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(50, 350, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(100, 350, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(150, 350, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(200, 350, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(250, 350, 50, 50)
+        ctx.fillStyle = "#d2a679"
+        ctx.fillRect(300, 350, 50, 50)
+        ctx.fillStyle = "#ffeecc"
+        ctx.fillRect(350, 350, 50, 50);
+        ctx.closePath();
+    </script>
+</body>
+
+</html>

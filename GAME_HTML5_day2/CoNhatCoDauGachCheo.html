@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game_01</title>
+</head>
+
+<body>
+
+    <canvas id="canvas" width="400" height="200" style="border: 4px solid hsl(0, 86%, 59%)" ;"></canvas>
+</body>
+<script>
+
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 70;
+
+    context.beginPath();
+    context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+    context.fillStyle = 'red';
+    context.fill();
+    context.lineWidth = 0;
+    context.strokeStyle = '#003300';
+    context.stroke();
+</script>
+
+
+</script>
+
+</html>

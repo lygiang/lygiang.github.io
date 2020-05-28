@@ -1,0 +1,19 @@
+.first_paragraph{
+    color: red;
+}
+
+#first_paragraph{
+    color: royalblue;
+}
+
+/*#secon_paragraph{
+    background-color: seagreen;
+}*/
+
+.span_test{
+    background-color: slategrey;
+}
+
+#class_one{
+    font-weight: 300;
+}
