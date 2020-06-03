@@ -1,0 +1,13 @@
+#masthread-container.container-style{
+    position: fixed;
+    top: 0;
+    transition: transform 0.3s ease;
+    content: "";
+    width: 1730px;
+    height: 60px;
+    opacity: 1;
+    pointer-events: none;
+    right: 0px;
+    bottom: 0;
+    left: 0;
+}

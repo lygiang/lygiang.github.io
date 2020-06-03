@@ -1,0 +1,16 @@
+.fist-pic, .second-pic{
+    width: 165px;
+    height: 165px;
+}
+
+.second-pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.second-pic:hover{
+    transition: 0.7s ease-in-out;
+    opacity: 1;
+}

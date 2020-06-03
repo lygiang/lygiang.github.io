@@ -1,0 +1,18 @@
+.nav-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.content{
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.btn-click{
+    position: absolute;
+    left: calc(50% - 24px);
+    top: calc(50% - 7.5px);
+}

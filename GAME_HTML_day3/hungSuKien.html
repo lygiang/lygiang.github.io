@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mouse event</h1>
+    <ul>
+        <li>mouse click</li>
+        <li>mouse move</li> 
+        <li>mouse wheel</li> 
+
+    </ul>
+    <script>
+        addEventListener('click', (event) =>{
+            console.log(event);
+            console.log(`clientX = ${event.clientX} - clientY = ${event.clientY}`);
+        })
+        addEventListener('mousemove', function(event){
+            console.log(`clientX = ${event.clientX} - clientY = ${event.clientY}`);
+        })
+        addEventListener('wheel', (event) =>{
+            console.log(event);
+        })
+    </script>
+</body>
+</html> 

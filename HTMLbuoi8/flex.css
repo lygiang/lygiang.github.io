@@ -1,0 +1,10 @@
+.outer-flex{
+    /* display: flex; */
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background: red ;
+    border: solid 1px black;
+}

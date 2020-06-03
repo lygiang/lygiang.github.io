@@ -16,11 +16,11 @@ HTML_Day4
  +block: chiều rộng trải hết màn hình (div)
  +inline: chỉ bao quanh text đó (span)
  +inline-block: 
- +none: ẩn nội dung đi và thẻ dưới đè lên(nhảy lên) -> visibility: ẩn nội dung đi và thành khoảng trắng, ko bị ngảy nội dung bên dưới lên
+ +none: ẩn nội dung đi và thẻ dưới đè lên(nhảy lên) -> visibility: ẩn nội dung đi và thành khoảng trắng, ko bị nhảy nội dung bên dưới lên
  +flex:
  +table:
  
--Span: là thẻ dùng để style cho text, đoạn văn nên ko thể set hight width cho nó
+-Span: là thẻ dùng để style cho text, đoạn văn nên ko thể set height width cho nó
  Text: thường dùng với span, label
  Link dùng a)
  
@@ -60,4 +60,136 @@ HTML_Day4
     box-sizing: border-box;
 	}
  
+ AG689596369
  
+ 
+HTML_buoi5: ôn tập
+
+- Để dàn đều content trên màn hình: set left/right = 0
+- Calc: set element ra chính giữa (đối với left/top), VD: 50% trừ đi 1 nửa số px của element đó thì sẽ ra chính giữa.
+- Link Cdn Font-Awesome: 
+- Muốn cho ảnh dưới đè lên ảnh trên: 
+ +Ảnh 1: dùng position:absolute, và position:relative cho thằng cha bao bọc, top:0 left:0, opacity:0 
+ +Ảnh 2.hover: dùng transition:time , opacity:1 
+
+
+1. Đặt id định danh function
+2. trong script :
+ + Khai báo class <name> luôn có constructor() method
+ + thêm object gọi đến class tùy theo mục đích
+3. Gọi đến class đã khai báo, sd document.getElementById("idname").innerHTML = 
+
+
+HTML_buoi6: Grid và bootrap
+
+- Grid là gì:  https://topdev.vn/blog/css-grid-la-gi/
+
++Chia thành khoảng lớn dùng grid bootrap
++
+
+
+
+
+
+
+
+
+
+HTML_buoi7: Sử dụng Git và github
+GIT quản lý sự thay đổi diễn ra 
+
+git init
+git status
+
+I. Cách để commit code lên GIT : 
+1) working dir: 
+file mở/làm việc trên máy tính, thêm sửa xóa
+
+|| git add (bước chuẩn bị commit) => add tất cả dùng lệnh : git add .
+
+để xóa thư mục git dùng lệnh: rm -rf .git
+2) staging area: vùng trung gian
+
+||git commit -m "msg commit để lần sau dễ nhận biết " (chốt và đưa code lên tại trạng thái commit đầu tiên)
+
+3) local repo: chứa file commit()
+git log : kiểm tra lịch sử
+
+||push
+
+4) commit lên tk github trên mạng : tạo mới 1 repo bằng form [username].github.io
+local repo  =>  github repo
+chạy lệnh: git remote add origin https://github.com/lygiang/lygiang.github.io.git
+kiểm tra lại bằng lệnh: git remote -v
+lệnh đẩy code lên github trên mạng: git push [địa chỉ github repo] master
+
+Chú ý: cứ mỗi lần thay đổi cái gì mà muốn kiểm tra trạng thái thay đổi trước sau thì dùng lệnh: git status
+
+II. Để lấy code về local
+dùng lệnh: git clone [repository_name]
+
+Chú ý: không git clone về 1 thư mục đã chứa .git(với thư mục có chữ (master)). Nghĩa là ko lồng folder git này vào folder git khác, git lồng git.
+Nếu muốn đẩy lại lên, làm lại từ đầu thì phải xóa file .git đi.
+
+
+HTML_buoi8:
+Flexbox theo chiều ngang(row):
+- Display: flex  -> sử dụng lên thằng cha
+- Justify-content
+ +center: áp dụng lên thằng cha, dồn các thằng con vào giữa
+ +space-between: dãn đều các phần tử ko care lề
+ +space-evenly: sắp xếp khoảng cách đều từ lề đến các phần tử
+ +spave-around: lề 2 bên được dãn đều, khoảng cách giữa cách phần từ được dãn đều riêng (ít dùng hơn)
+ +flex-end: dồn tất cả phần tử sang bên phải
+ +flex-start: dồn tất cả sang bên trái
+ 
+ 
+-flex-direction theo chiều dọc (column): 
+ +row: đưa các phần tử từ dọc thành ngang
+ +column: đưa các phần tử nằm ngang thành dọc
+
+-align-item:
+ +center: căn phần tử theo chiều dọc vào giữa
+ +baseline: (ít dùng hơn)
+ +flex-end
+ +flex-start
+
+(Ít dùng)
+- flex-grow: chia đều chiều ngang các phần tử theo tỷ lệ màn hình dựa vào setting, set số càng to thì phần tử có diện tích càng to
+- flex-shink: ngược với flex-grow, số càng to thì chia diện tích phần tử càng nhỏ
+- flex-wrap: 
+ +wrap: tự điều chỉnh phần tử lên xuống dòng dựa vào tỷ lệ màn hình
+ +nowrap: chỉnh phần tử sao cho hiển thị đủ trên 1 dòng theo tỷ lệ màn hình
+ +wrap-reverse: sắp xếp phần tử chiều từ dưới cùng lên trên, theo kiểu dưới ko đủ thì mới nhảy lên trên.
+
+
+*Để cố định navbar:
+position:fixed;
+top: 0;
+left:0;
+right:0;
+bottom:0;
+
+*Để cố định sidebar:
+position:fixed;
+left:0;
+top: 0;
+bottom:0;
+width: theo mình set
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
