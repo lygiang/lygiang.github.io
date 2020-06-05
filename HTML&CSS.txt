@@ -89,12 +89,6 @@ HTML_buoi6: Grid và bootrap
 
 
 
-
-
-
-
-
-
 HTML_buoi7: Sử dụng Git và github
 GIT quản lý sự thay đổi diễn ra 
 
@@ -133,13 +127,13 @@ Nếu muốn đẩy lại lên, làm lại từ đầu thì phải xóa file .gi
 
 
 HTML_buoi8:
-Flexbox theo chiều ngang(row):
+Flexbox theo chiều ngang(row): trò chơi luyện tập về flex :https://flexboxfroggy.com/#vi
 - Display: flex  -> sử dụng lên thằng cha
 - Justify-content
  +center: áp dụng lên thằng cha, dồn các thằng con vào giữa
  +space-between: dãn đều các phần tử ko care lề
  +space-evenly: sắp xếp khoảng cách đều từ lề đến các phần tử
- +spave-around: lề 2 bên được dãn đều, khoảng cách giữa cách phần từ được dãn đều riêng (ít dùng hơn)
+ +space-around: lề 2 bên được dãn đều, khoảng cách giữa cách phần từ được dãn đều riêng (ít dùng hơn)
  +flex-end: dồn tất cả phần tử sang bên phải
  +flex-start: dồn tất cả sang bên trái
  
@@ -161,7 +155,7 @@ Flexbox theo chiều ngang(row):
  +wrap: tự điều chỉnh phần tử lên xuống dòng dựa vào tỷ lệ màn hình
  +nowrap: chỉnh phần tử sao cho hiển thị đủ trên 1 dòng theo tỷ lệ màn hình
  +wrap-reverse: sắp xếp phần tử chiều từ dưới cùng lên trên, theo kiểu dưới ko đủ thì mới nhảy lên trên.
-
+-flex-basis: chỉ định độ dài item linh hoạt theo setting. 
 
 *Để cố định navbar:
 position:fixed;
